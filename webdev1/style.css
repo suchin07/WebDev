@@ -1,0 +1,157 @@
+body {
+    background-image: url('images/background.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100%;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+.logo1 {
+    margin-top: 55px;
+    opacity: 0.5;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+.back-color {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+form {
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    border-radius: 4px;
+    margin: auto;
+    overflow: auto;
+}
+.form-border {
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 4px;
+    position: relative;
+}
+.field-padding {
+    padding: 2px 0;
+    box-sizing: border-box;
+}
+.blur {
+    background-color: rgb(247, 247, 247);
+    border: none;
+    padding: 5px 20px;
+}
+.blur span {
+    opacity: 0.3;
+}
+.text-field {
+    background-color: rgb(247, 247, 247);
+    border-left: 1px solid rgb(198, 198, 198);
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    font-size: 16px;
+    padding: 5px 20px;
+    height: 100%;
+    box-shadow: none;
+    color: rgb(175, 175, 175);
+}
+.checkbox label {
+    padding-left: 0;
+}
+.check-label {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    color: rgb(175, 175, 175);
+    word-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    padding-left: 0;
+}
+.check-group input[type="checkbox"] {
+    display: none;
+}
+.check-group input[type="checkbox"] + span {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 4px;
+    padding: 3px;
+    vertical-align: middle;
+    background-color: rgb(247, 247, 247);
+}
+.check-group input[type="checkbox"]:checked + span {
+    background-image: url('images/checkbox_checked.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.button-wide {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    background-color: rgb(156, 212, 54);
+    border: 1px solid rgb(59, 154, 0);
+}
+textarea.form-control {
+    resize: none;
+    text-align: left;
+    font-size: 16px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(175, 175, 175);
+}
+.checkbox-left, .button-right {
+    display: inline-block;
+}
+/*.button-right {
+    float: right;
+}*/
+.button-right input {
+    padding: 7px 43px;
+}
+input[value="Send"], input[value="Done"] {
+    padding: 7px 43px;
+}
+input[value="Subscribe"] {
+    padding: 7px 35px;
+}
+.button-red {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(162, 32, 42);
+    padding: 7px 35px;
+}
+.logo2 {
+    opacity: 0.5;
+}
+@media screen and (max-width: 991px) {
+    .logo2 {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .button-right, .button-wide {
+        width: 100%;
+    }
+    .input-group input {
+        font-size: 14px;
+    }
+    input[value="Send"], input[value="Subscribe"] {
+        margin-bottom: 10px;
+    }
+    .check-group label {
+        font-size: 14px;
+    }
+}
