@@ -1,0 +1,63 @@
+footer {
+    background-color: #262626;
+    padding: 35px 0;
+    div {
+        p {
+            margin-bottom: 0;
+            color: #b9b9b9;
+            font: {
+                size: 16px;
+                family: 'Raleway';
+                weight: 300;
+            }
+            line-height: 25px;
+        }
+        &.text-center {
+            p {
+                font: {
+                    size: 25px;
+                    family: 'Pacifico';
+                    weight: 400;
+                }
+                transition: all 0.3s linear;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &.text-right {
+            p {
+                strong {
+                    color: #ff2b58;
+                }
+                a {
+                    color: #b9b9b9;
+                    font: {
+                        size: 16px;
+                        family: 'Raleway';
+                        weight: 300;
+                    }
+                    &:visited {
+                        color: $orange-font;
+                    }
+                    &:hover {
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+                    &:active {
+                        color: $orange-font;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 776px) {
+    footer {
+        div {
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

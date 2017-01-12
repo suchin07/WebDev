@@ -1,0 +1,62 @@
+//font family
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,800&subset=latin-ext');
+//font types
+$menu-font: 700 16px/25px 'Raleway';
+$heading-font: 700 90px 'Raleway';
+$paragraf-font: 300 17px/27px 'Raleway';
+$button-font: 400 20px/27px 'Raleway';
+//font colors
+$dark-font: #171e29;
+$light-font: #fff;
+$orange-font: #ff6033;
+//box-shadow
+$shadow: 5px 5px 2px grey;
+//transition effect 
+@mixin animated(){
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    color: $dark-font;
+    
+}
+section, header {
+    padding: 150px 0;
+}
+.typical-header {
+    font: $heading-font;
+    line-height: 90px;
+}
+.standard-paraf {
+    font: $paragraf-font;
+}
+.button {
+    box-shadow: $shadow;
+    font: $button-font;
+    color: $light-font;
+    text-transform: uppercase;
+    padding: 20px 45px;
+    border-radius: 0;
+    border: none;
+    transition: all 0 linear;
+    &:hover, &:focus {
+        border-color: transparent;
+        //color: #00c4c4;
+    }
+    &:active {
+        transform: translateY(5px);
+        //color: #00c4c4;
+        border-color: transparent;
+        &:hover, &:focus {
+            border-color: transparent;
+            //color: #00c4c4;
+        }
+    }
+}
