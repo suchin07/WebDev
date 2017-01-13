@@ -95,14 +95,22 @@ section, header {
   #home nav .nav-menu li {
     margin-left: 0; } }
 @media screen and (max-width: 767px) {
+  section, header {
+    padding: 50px 0; }
+
   #home {
     background-image: none;
     background-color: #f8f8f8;
     min-height: 0; }
     #home nav .nav-menu li a {
       text-align: center; }
+    #home nav .logo a {
+      font-size: 30px;
+      margin: 8px 0 8px 15px;
+      line-height: 34px;
+      padding: 0; }
     #home .header-content h2 {
-      margin-top: 0;
+      margin-top: 75px;
       font-size: 50px; }
     #home .mouse {
       margin-top: 50px; } }
@@ -118,8 +126,6 @@ section, header {
 
 #services {
   background-color: #70bfff;
-  position: relative;
-  z-index: 1;
   min-height: 850px; }
   #services .info-box {
     background-color: #f8f8f8;
@@ -148,15 +154,15 @@ section, header {
       vertical-align: middle;
       border-left: 1px solid #9d9d9d; }
   #services .tomato {
-    overflow: visible; }
-    #services .tomato img {
-      position: relative;
-      z-index: 3; }
+    overflow: visible;
+    background-image: url("../images/tomato.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 550px; }
     #services .tomato h2 {
       color: #fff;
-      position: relative;
-      z-index: 5;
-      margin-top: -260px;
+      margin-top: 265px;
       font-size: 90px; }
 
 #gallery {
@@ -297,9 +303,6 @@ section, header {
     margin-bottom: 50px; }
   #contact .contact-form {
     padding-right: 100px; }
-    #contact .contact-form::-moz-placeholder, #contact .contact-form::-webkit-placeholder, #contact .contact-form::-o-placeholder {
-      color: #fff;
-      opacity: 1; }
     #contact .contact-form .contact-input, #contact .contact-form textarea {
       border-radius: 0;
       border: none;
@@ -319,6 +322,10 @@ section, header {
         opacity: 1;
         font-weight: 700;
         box-shadow: none; }
+      #contact .contact-form .contact-input::-moz-placeholder {
+        color: #fff; }
+      #contact .contact-form .contact-input::-webkit-input-placeholder {
+        color: #fff; }
     #contact .contact-form textarea {
       resize: none; }
       #contact .contact-form textarea:focus {
@@ -326,6 +333,10 @@ section, header {
         opacity: 1;
         font-weight: 700;
         box-shadow: none; }
+      #contact .contact-form textarea::-moz-placeholder {
+        color: #fff; }
+      #contact .contact-form textarea::-webkit-input-placeholder {
+        color: #fff; }
     #contact .contact-form .button {
       background-color: #ff6033;
       color: #fff;
@@ -338,7 +349,7 @@ section, header {
           color: #00c4c4; }
   #contact address {
     margin-left: 100px; }
-    #contact address h4 {
+    #contact address strong {
       text-transform: uppercase;
       font-size: 17px;
       font-family: 'Raleway';
@@ -359,8 +370,10 @@ section, header {
         color: #ff6033; }
 
 @media screen and (max-width: 1199px) {
-  #services .tomato img {
-    margin-bottom: 50px; }
+  #services .info-box {
+    width: 100%; }
+    #services .info-box:first-child {
+      margin-top: 20px; }
 
   #gallery img[alt="jezyny"] {
     margin-top: 15px; }
@@ -383,23 +396,33 @@ section, header {
     padding: 0; }
 
   #contact .contact-content {
-    padding: 0; } }
-@media screen and (max-width: 776px) {
+    padding: 0; }
+  #contact address {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 155, 0.3);
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+    #contact address strong, #contact address a, #contact address p {
+      color: #fff; }
+  #contact form {
+    text-align: center; } }
+@media screen and (max-width: 767px) {
   #about div.text-left {
     padding-left: 15px; }
     #about div.text-left h2 {
       margin-top: 20px;
       font-size: 50px; }
 
-  #services .tomato img {
-    margin-bottom: 100px; }
   #services .tomato h2 {
     font-size: 50px;
-    margin-top: -320px; }
-  #services .info-box {
-    width: 100%; }
-    #services .info-box:first-child {
-      margin-top: 20px; }
+    margin-top: 20px;
+    padding-top: 230px; }
 
   #gallery h2 {
     font-size: 50px; }
@@ -414,7 +437,9 @@ section, header {
   #blog .blog-post {
     margin-top: 0; }
     #blog .blog-post figure {
-      margin-top: 20px; }
+      margin: 0 auto;
+      margin-top: 20px;
+      max-width: 380px; }
 
   #contact .contact-content h2 {
     font-size: 50px; } }
@@ -450,8 +475,8 @@ footer {
     footer div.text-right p a:active {
       color: #ff6033; }
 
-@media screen and (max-width: 776px) {
-  footer div p {
+@media screen and (max-width: 1199px) {
+  footer div.text-left, footer div.text-center, footer div.text-right {
     text-align: center; } }
 
 /*# sourceMappingURL=mystyle.css.map */

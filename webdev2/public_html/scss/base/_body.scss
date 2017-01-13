@@ -15,8 +15,6 @@
 }
 #services {
     background-color: #70bfff;
-    position: relative;
-    z-index: 1;
     min-height: 850px;
     .info-box {
         background-color: #f8f8f8;
@@ -55,16 +53,14 @@
     }
     .tomato {
         overflow: visible;
-        img {
-            position: relative;
-            z-index: 3;
-            //overflow: auto;
-        }
+        background-image: url('../images/tomato.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 550px;
         h2 {
             color: $light-font;
-            position: relative;
-            z-index: 5;
-            margin-top: -260px;
+            margin-top: 265px;
             font-size: 90px;
         }
     }
@@ -268,12 +264,7 @@
         margin-bottom: 50px;
     }
     .contact-form {
-        //width: 90%;
         padding-right: 100px;
-        &::-moz-placeholder, &::-webkit-placeholder, &::-o-placeholder {
-            color: $light-font;
-            opacity: 1;
-        }
         .contact-input, textarea {
             border-radius: 0;
             border: none;
@@ -297,6 +288,12 @@
                 font-weight: 700;
                 box-shadow: none;
             }
+            &::-moz-placeholder {
+                color: $light-font;
+            }
+            &::-webkit-input-placeholder {
+                color: $light-font;
+            }
         }
         textarea {
             resize: none;
@@ -305,6 +302,12 @@
                 opacity: 1;
                 font-weight: 700;
                 box-shadow: none;
+            }
+            &::-moz-placeholder {
+            color: $light-font;
+            }
+            &::-webkit-input-placeholder {
+                color: $light-font;
             }
         }
         .button {
@@ -328,7 +331,7 @@
     }
     address {
         margin-left: 100px;
-        h4 {
+        strong {
             text-transform: uppercase;
             font: {
                 size: 17px;
@@ -359,9 +362,10 @@
 }
 @media screen and (max-width: 1199px) {
     #services {
-        .tomato {
-            img {
-                margin-bottom: 50px;
+        .info-box {
+            width: 100%;
+            &:first-child {
+                margin-top: 20px;
             }
         }
     }
@@ -408,9 +412,28 @@
         .contact-content {
             padding: 0;
         }
+        address {
+            padding: 10px;
+            margin: 0 auto;
+            margin-top: 15px;
+            background-color: rgba(0, 0, 155, 0.3);
+            //max-width: 350px;
+            text-align: center;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            strong, a, p {
+                color: $light-font;
+            }
+        }
+        form {
+            text-align: center;
+        }
     }
 }
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 767px) {
     #about {
         div {
             &.text-left {
@@ -424,18 +447,10 @@
     }
     #services {
         .tomato {
-            img {
-                margin-bottom: 100px;
-            }
             h2 {
                 font-size: 50px;
-                margin-top: -320px;
-            }
-        }
-        .info-box {
-            width: 100%;
-            &:first-child {
                 margin-top: 20px;
+                padding-top: 230px;
             }
         }
     }
@@ -466,7 +481,9 @@
         .blog-post {
             margin-top: 0;
             figure {
+                margin: 0 auto;
                 margin-top: 20px;
+                max-width: 380px;
             }
         }
     }
