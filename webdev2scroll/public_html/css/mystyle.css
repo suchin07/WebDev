@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,800&subset=latin-ext");
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #171e29; }
+
+section, header {
+  padding: 150px 0; }
+
+.typical-header {
+  font: 700 90px "Raleway";
+  line-height: 90px; }
+
+.standard-paraf {
+  font: 300 17px/27px "Raleway"; }
+
+.button {
+  box-shadow: 5px 5px 2px grey;
+  font: 400 20px/27px "Raleway";
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 45px;
+  border-radius: 0;
+  border: none;
+  transition: all 0 linear; }
+  .button:hover, .button:focus {
+    border-color: transparent; }
+  .button:active {
+    transform: translateY(5px);
+    border-color: transparent; }
+    .button:active:hover, .button:active:focus {
+      border-color: transparent; }
+
+.menu-scrolled {
+  margin-top: 0; }
+
+#home {
+  background-image: url("../images/header.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  min-height: 1148px; }
+  #home nav {
+    border-color: transparent; }
+    #home nav .logo a {
+      font-family: 'Pacifico', cursive;
+      font-size: 50px;
+      font-weight: 400;
+      color: #171e29;
+      margin: 50px 0 50px -15px;
+      line-height: 50px;
+      padding: 0 15px 0 15px;
+      transition: all 0.4s ease-in-out; }
+      #home nav .logo a.menu-scrolled {
+        margin-top: 0;
+        margin-bottom: 0; }
+    #home nav .nav-menu {
+      margin-top: 50px;
+      transition: all 0.4s ease-in-out; }
+      #home nav .nav-menu.menu-scrolled {
+        margin-top: 0;
+        margin-bottom: 0; }
+      #home nav .nav-menu li {
+        margin-left: 30px; }
+        #home nav .nav-menu li.active a {
+          background-color: transparent; }
+        #home nav .nav-menu li a {
+          text-transform: uppercase;
+          line-height: 50px;
+          font: 700 16px/25px "Raleway";
+          color: #171e29; }
+          #home nav .nav-menu li a:link {
+            color: #171e29; }
+          #home nav .nav-menu li a:visited {
+            color: #ff6033; }
+          #home nav .nav-menu li a:hover {
+            color: #ff6033;
+            border-top: 3px solid #ff6033;
+            margin-top: -3px; }
+          #home nav .nav-menu li a:active {
+            color: #00c4c4; }
+  #home .header-content h2 {
+    font: 800 60px 'Raleway';
+    margin-top: 215px;
+    line-height: 60px; }
+  #home .header-content a {
+    background-color: #ff6033; }
+    #home .header-content a:hover, #home .header-content a:focus {
+      border-color: transparent;
+      color: #00c4c4; }
+    #home .header-content a:active {
+      transform: translateY(5px);
+      color: #00c4c4;
+      border-color: transparent; }
+      #home .header-content a:active:hover, #home .header-content a:active:focus {
+        border-color: transparent;
+        color: #00c4c4; }
+  #home .mouse {
+    margin-top: 300px; }
+    #home .mouse img:hover {
+      transform: rotate(180deg); }
+
+@media screen and (max-width: 991px) {
+  #home nav .nav-menu li {
+    margin-left: 0; } }
+@media screen and (max-width: 767px) {
+  section, header {
+    padding: 50px 0; }
+
+  #home {
+    background-image: none;
+    background-color: #f8f8f8;
+    min-height: 0; }
+    #home nav .nav-menu li a {
+      text-align: center; }
+    #home nav .logo a {
+      font-size: 30px;
+      margin: 8px 0 8px 15px;
+      line-height: 34px;
+      padding: 0; }
+    #home .header-content h2 {
+      margin-top: 75px;
+      font-size: 50px; }
+    #home .mouse {
+      margin-top: 50px; } }
+#about {
+  background-color: #00c4c4; }
+  #about h2 {
+    color: #fff;
+    margin-top: 150px; }
+  #about p {
+    color: #fff; }
+  #about div.text-left {
+    padding-left: 50px; }
+
+#services {
+  background-color: #70bfff;
+  min-height: 850px; }
+  #services .info-box {
+    background-color: #f8f8f8;
+    display: table;
+    border: none;
+    box-shadow: 5px 5px 2px grey;
+    width: 80%;
+    margin-bottom: 30px; }
+    #services .info-box:first-child {
+      margin-top: 100px; }
+    #services .info-box .text-box {
+      width: 80%;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 20px 30px; }
+      #services .info-box .text-box p {
+        color: #171e29;
+        font-family: 'Raleway';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        margin-bottom: 0; }
+    #services .info-box .image-box {
+      width: 20%;
+      display: table-cell;
+      vertical-align: middle;
+      border-left: 1px solid #9d9d9d; }
+  #services .tomato {
+    overflow: visible;
+    background-image: url("../images/tomato.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 550px; }
+    #services .tomato h2 {
+      color: #fff;
+      margin-top: 265px;
+      font-size: 90px; }
+
+#gallery {
+  background-color: #ffe92f; }
+  #gallery #gallery-extra {
+    display: none; }
+  #gallery div.text-center {
+    padding: 0 300px; }
+  #gallery img {
+    box-shadow: 5px 5px 10px grey;
+    margin-top: 15px; }
+  #gallery img[alt="jezyny"] {
+    margin-top: 34px; }
+  #gallery a {
+    background-color: #5585a2;
+    color: #fff;
+    margin-top: 50px; }
+    #gallery a:hover, #gallery a:focus {
+      color: #96b92c; }
+    #gallery a:active {
+      color: #96b92c; }
+      #gallery a:active:hover, #gallery a:active:focus {
+        color: #96b92c; }
+
+#subs {
+  background-image: url("../images/subs-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+  min-height: 500px; }
+  #subs h3 {
+    line-height: 40px;
+    color: #171e29;
+    font-size: 40px;
+    font-family: 'Raleway';
+    font-weight: 700; }
+  #subs form a {
+    background-color: #96b92c;
+    color: #fff;
+    padding: 15px 45px; }
+    #subs form a:hover, #subs form a:focus {
+      color: #5585a2; }
+    #subs form a:active {
+      color: #5585a2; }
+      #subs form a:active:hover, #subs form a:active:focus {
+        color: #5585a2; }
+  #subs form input {
+    border: 1px solid #171e29;
+    border-radius: 0;
+    height: 57px; }
+
+#blog {
+  background-color: #b07cf7; }
+  #blog #blog-extra {
+    display: none; }
+  #blog .blog-content {
+    padding: 0 300px;
+    color: #fff; }
+  #blog .blog-post {
+    margin-top: 50px; }
+    #blog .blog-post figure {
+      position: relative;
+      z-index: 1;
+      height: 310px; }
+      #blog .blog-post figure img {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        width: 100%; }
+      #blog .blog-post figure figcaption {
+        padding: 20px;
+        background: transparent;
+        background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.9));
+        background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.9));
+        background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.9));
+        background: linear-gradient(top, transparent, rgba(0, 0, 0, 0.9));
+        height: 310px;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        display: none;
+        transition: all 0.7s linear; }
+        #blog .blog-post figure figcaption .date-box {
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 4px;
+          width: 75px;
+          height: 75px;
+          float: left;
+          overflow: visible; }
+          #blog .blog-post figure figcaption .date-box p {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'Raleway';
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 32px; }
+        #blog .blog-post figure figcaption h4 {
+          clear: both;
+          margin-top: 190px; }
+          #blog .blog-post figure figcaption h4 a {
+            color: #fff;
+            line-height: 20px;
+            font-size: 20px;
+            font-family: 'Raleway';
+            font-weight: 700; }
+            #blog .blog-post figure figcaption h4 a:hover {
+              color: #fff;
+              text-decoration: underline;
+              cursor: pointer; }
+        #blog .blog-post figure figcaption p {
+          color: #fff;
+          line-height: 13px;
+          font-size: 13px;
+          font-family: 'Raleway';
+          font-weight: 300; }
+      #blog .blog-post figure:hover figcaption {
+        display: block; }
+  #blog .blog-button a {
+    background-color: #b72b3b;
+    color: #fff;
+    margin-top: 50px; }
+    #blog .blog-button a:hover, #blog .blog-button a:focus {
+      color: #ffe92f; }
+    #blog .blog-button a:active {
+      color: #ffe92f; }
+      #blog .blog-button a:active:hover, #blog .blog-button a:active:focus {
+        color: #ffe92f; }
+
+#contact {
+  background-image: url("../images/contact-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+  min-height: 1008px; }
+  #contact .contact-content {
+    padding: 0 300px;
+    margin-bottom: 50px; }
+  #contact .contact-form {
+    padding-right: 100px; }
+    #contact .contact-form .contact-input, #contact .contact-form textarea {
+      border-radius: 0;
+      border: none;
+      opacity: 0.7;
+      background-color: #00c4c4;
+      color: #fff;
+      box-shadow: none;
+      font-size: 15px;
+      font-family: 'Raleway';
+      font-weight: 300;
+      line-height: 25px;
+      transition: all 0 linear; }
+    #contact .contact-form .contact-input {
+      height: 50px; }
+      #contact .contact-form .contact-input:focus {
+        border-left: 3px solid #355b82;
+        opacity: 1;
+        font-weight: 700;
+        box-shadow: none; }
+      #contact .contact-form .contact-input::-moz-placeholder {
+        color: #fff; }
+      #contact .contact-form .contact-input::-webkit-input-placeholder {
+        color: #fff; }
+    #contact .contact-form textarea {
+      resize: none; }
+      #contact .contact-form textarea:focus {
+        border-left: 3px solid #355b82;
+        opacity: 1;
+        font-weight: 700;
+        box-shadow: none; }
+      #contact .contact-form textarea::-moz-placeholder {
+        color: #fff; }
+      #contact .contact-form textarea::-webkit-input-placeholder {
+        color: #fff; }
+    #contact .contact-form .button {
+      background-color: #ff6033;
+      color: #fff;
+      margin-top: 0; }
+      #contact .contact-form .button:hover, #contact .contact-form .button:focus {
+        color: #00c4c4; }
+      #contact .contact-form .button:active {
+        color: #00c4c4; }
+        #contact .contact-form .button:active:hover, #contact .contact-form .button:active:focus {
+          color: #00c4c4; }
+  #contact address {
+    margin-left: 100px; }
+    #contact address strong {
+      text-transform: uppercase;
+      font-size: 17px;
+      font-family: 'Raleway';
+      font-weight: 700;
+      color: #171e29; }
+    #contact address p {
+      font: 300 17px/27px "Raleway";
+      color: #171e29; }
+    #contact address a {
+      font: 300 17px/27px "Raleway";
+      color: #171e29; }
+      #contact address a:visited {
+        color: #ff6033; }
+      #contact address a:hover {
+        text-decoration: underline; }
+      #contact address a:active {
+        text-decoration: underline;
+        color: #ff6033; }
+
+@media screen and (max-width: 1199px) {
+  #services .info-box {
+    width: 100%; }
+    #services .info-box:first-child {
+      margin-top: 20px; }
+
+  #gallery img[alt="jezyny"] {
+    margin-top: 15px; }
+
+  #subs {
+    background-image: none; }
+
+  #blog .blog-post figure figcaption {
+    width: 100%; }
+
+  #contact .contact-form {
+    padding-right: 0; }
+  #contact address {
+    margin-left: 0; } }
+@media screen and (max-width: 991px) {
+  #gallery div.text-center {
+    padding: 0 15px; }
+
+  #blog .blog-content {
+    padding: 0; }
+
+  #contact .contact-content {
+    padding: 0; }
+  #contact address {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 155, 0.3);
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+    #contact address strong, #contact address a, #contact address p {
+      color: #fff; }
+  #contact form {
+    text-align: center; } }
+@media screen and (max-width: 767px) {
+  #about div.text-left {
+    padding-left: 15px; }
+    #about div.text-left h2 {
+      margin-top: 20px;
+      font-size: 50px; }
+
+  #services .tomato h2 {
+    font-size: 50px;
+    margin-top: 20px;
+    padding-top: 230px; }
+
+  #gallery h2 {
+    font-size: 50px; }
+
+  #subs h3 {
+    font-size: 30px; }
+  #subs form .button {
+    margin-top: 20px; }
+
+  #blog .blog-content h2 {
+    font-size: 50px; }
+  #blog .blog-post {
+    margin-top: 0; }
+    #blog .blog-post figure {
+      margin: 0 auto;
+      margin-top: 20px;
+      max-width: 380px; }
+
+  #contact .contact-content h2 {
+    font-size: 50px; } }
+footer {
+  background-color: #262626;
+  padding: 35px 0; }
+  footer div p {
+    margin-bottom: 0;
+    color: #b9b9b9;
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 300;
+    line-height: 25px; }
+  footer div.text-center p {
+    font-size: 25px;
+    font-family: 'Pacifico';
+    font-weight: 400;
+    transition: all 0.3s linear; }
+    footer div.text-center p:hover {
+      transform: scale(1.2); }
+  footer div.text-right p strong {
+    color: #ff2b58; }
+  footer div.text-right p a {
+    color: #b9b9b9;
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 300; }
+    footer div.text-right p a:visited {
+      color: #ff6033; }
+    footer div.text-right p a:hover {
+      font-weight: 700;
+      text-decoration: none; }
+    footer div.text-right p a:active {
+      color: #ff6033; }
+
+@media screen and (max-width: 1199px) {
+  footer div.text-left, footer div.text-center, footer div.text-right {
+    text-align: center; } }
+
+/*# sourceMappingURL=mystyle.css.map */
